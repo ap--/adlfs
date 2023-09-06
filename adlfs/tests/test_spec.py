@@ -1189,7 +1189,7 @@ def test_dask_parquet(storage):
         write_metadata_file=True,
     )
     assert fs.glob("test/test_group3.parquet/*") == [
-        "test/test_group3.parquet/A=1",
+        "test/test_group3.parquet/A=1/",
         "test/test_group3.parquet/_common_metadata",
         "test/test_group3.parquet/_metadata",
     ]
